@@ -1,0 +1,53 @@
+### Create Party, Add ContactMethod, Confirm and Ship Party
+
+POST http://localhost:8080/ship-party
+
+### Create Party, Add ContactMethod and Ship Party
+
+POST http://localhost:8080/ship-unconfirmed-party
+
+### Retrieve all existing Parties
+
+GET http://localhost:8080/all-partys
+
+### Receive all existing partys using a stream
+
+GET http://localhost:8080/all-partys-streaming
+
+### Create Party with id 666a1661-474d-4046-8b12-8b5896312768
+
+POST http://localhost:8080/party/666a1661-474d-4046-8b12-8b5896312768
+
+### Add ContactMethod a6aa01eb-4e38-4dfb-b53b-b5b82961fbf3 to Party 666a1661-474d-4046-8b12-8b5896312768
+
+POST http://localhost:8080/party/666a1661-474d-4046-8b12-8b5896312768/contactMethod/a6aa01eb-4e38-4dfb-b53b-b5b82961fbf3
+
+### Increment ContactMethod a6aa01eb-4e38-4dfb-b53b-b5b82961fbf3 to Party 666a1661-474d-4046-8b12-8b5896312768
+
+POST http://localhost:8080/party/666a1661-474d-4046-8b12-8b5896312768/contactMethod/a6aa01eb-4e38-4dfb-b53b-b5b82961fbf3/increment
+
+### Decrement ContactMethod a6aa01eb-4e38-4dfb-b53b-b5b82961fbf3 to Party 666a1661-474d-4046-8b12-8b5896312768
+
+POST http://localhost:8080/party/666a1661-474d-4046-8b12-8b5896312768/contactMethod/a6aa01eb-4e38-4dfb-b53b-b5b82961fbf3/decrement
+
+### Confirm Party 666a1661-474d-4046-8b12-8b5896312768
+
+POST http://localhost:8080/party/666a1661-474d-4046-8b12-8b5896312768/confirm
+
+### Ship Party 666a1661-474d-4046-8b12-8b5896312768
+
+POST http://localhost:8080/party/666a1661-474d-4046-8b12-8b5896312768/ship
+
+### Retrieve shipped Deluxe Chairs
+
+GET http://localhost:8080/total-shipped/Deluxe Chair
+
+### Retrieve shipped a6aa01eb-4e38-4dfb-b53b-b5b82961fbf3
+
+GET http://localhost:8080/total-shipped/a6aa01eb-4e38-4dfb-b53b-b5b82961fbf3
+
+### Receive updates for 666a1661-474d-4046-8b12-8b5896312768
+
+GET http://localhost:8080/party-updates/666a1661-474d-4046-8b12-8b5896312768
+
+###
